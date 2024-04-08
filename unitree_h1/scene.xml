@@ -22,6 +22,16 @@
   </worldbody>
 
   <keyframe>
+    <!--
+      The values below are split into rows for readibility:
+      torso position x,y,z
+      torso orientation w,x,y,z
+      left leg (yaw, roll, pitch, knee, ancle)
+      right leg (yaw, roll, pitch, knee, ancle)
+      torso yaw
+      left arm (shoulder's pitch, roll, yaw, elbow)
+      right arm (shoulder's pitch, roll, yaw, elbow)
+    -->
     <key name="home"
       qpos="
     0 0 0.98
@@ -31,5 +41,15 @@
     0.0
     0 0 0 0
     0 0 0 0"/>
+
+    <key name="stand_on_left_leg"
+      qpos="0 0 0.98  
+    0.9877 0 0.1564 0
+    0 0 -0.6 0.8 -0.4 
+    0 0 -0.6 0.8 -0.4 
+    0.0
+    0.0 0.2 0 0.7
+    0.0 -0.2 0 0.7"/>
+
   </keyframe>
 </mujoco>
